@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+li span {
+    flex-grow: 1;
+    margin-left: 8px;
+}
+
+input[type="text"], input[type="date"], select {
+    padding: 6px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 6px 12px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+li input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 8px;
+}
+
+li button.delete-btn {
+    background-color: #f44336;
+    margin-left: 10px;
+}
+
+li button.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Couleurs par matière (exemples) */
+li.espagnol { background-color: #cce5ff; }
+li.francais { background-color: #fff3cd; }
+li["physique-chimie"] { background-color: #d4edda; }
+li.mathematiques { background-color: #f8d7da; }
+li.es { background-color: #e2e3e5; }
+li.nsi { background-color: #d1ecf1; }
+li.anglais { background-color: #f5c6cb; }
+li.eps { background-color: #fdfd96; }
+li["histoire-geographie"] { background-color: #f0ad4e; }
+li.emc { background-color: #d6d8d9; }

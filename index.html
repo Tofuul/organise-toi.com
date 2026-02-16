@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Organisateur de Cours</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mon Organisateur</h1>
+    </header>
+
+    <section id="cours">
+        <h2>Mes cours</h2>
+        <ul id="liste-cours"></ul>
+        <input type="text" id="nouveau-cours" placeholder="Ajouter un cours">
+        <button onclick="ajouterCours()">Ajouter</button>
+    </section>
+
+    <section id="devoirs">
+        <h2>Mes devoirs</h2>
+        <ul id="liste-devoirs"></ul>
+        <input type="text" id="nouveau-devoir" placeholder="Nom du devoir">
+
+        <!-- Menu déroulant des matières -->
+        <select id="matiere-devoir">
+            <option value="">Choisir la matière</option>
+            <option value="espagnol">Espagnol</option>
+            <option value="francais">Français</option>
+            <option value="physique-chimie">Physique-Chimie</option>
+            <option value="mathematiques">Mathématiques</option>
+            <option value="es">ES</option>
+            <option value="nsi">NSI</option>
+            <option value="anglais">Anglais</option>
+            <option value="eps">EPS</option>
+            <option value="histoire-geographie">Histoire-géographie</option>
+            <option value="emc">EMC</option>
+        </select>
+
+        <input type="date" id="date-devoir" title="Date limite">
+        <input type="date" id="date-prevue" title="Date prévue pour le faire">
+        <button onclick="ajouterDevoir()">Ajouter</button>
+    </section>
+
+    <button onclick="toutSupprimer()">Tout supprimer (cours et devoirs)</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
